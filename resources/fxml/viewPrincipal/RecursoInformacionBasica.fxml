@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.com.sai.controllers.RecursoInformacionBasica">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="150.0" prefWidth="290.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="150.0" text="Nombre Recurso">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lbl_NombreRecurso" alignment="TOP_CENTER" maxHeight="110.0" maxWidth="1.7976931348623157E308" minWidth="110.0" text="...h...&#10;asdasd&#10;asas&#10;as&#10;aa&#10;a&#10;a&#10;a&#10;a&#10;a&#10;a&#10;sadasdasd" wrapText="true" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="7.0" left="25.0" right="25.0" top="7.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="150.0" text="Descripcion">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lbl_Descripcion" alignment="TOP_CENTER" maxHeight="110.0" maxWidth="1.7976931348623157E308" minWidth="110.0" text="...h..." wrapText="true" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="7.0" left="25.0" right="25.0" top="7.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="150.0" text="Ubicacion">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lbl_UbicacionZonal" alignment="TOP_CENTER" maxHeight="110.0" maxWidth="1.7976931348623157E308" minWidth="110.0" text="...h..." wrapText="true" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="7.0" left="25.0" right="25.0" top="7.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="150.0" text="Imagen Principal">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="25.0" right="25.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <children>
+                  <VBox alignment="CENTER" layoutX="25.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="img_ImagenPrincipal" fitHeight="177.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Upse.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="7.0" top="7.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
