@@ -15,35 +15,47 @@
 
 <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.com.sai.controllers.Base">
    <top>
-      <VBox prefHeight="100.0" prefWidth="675.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="60.0" prefWidth="675.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER" prefHeight="102.0" prefWidth="675.0" VBox.vgrow="ALWAYS">
+            <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="72.0" prefWidth="675.0" VBox.vgrow="ALWAYS">
                <children>
-                  <ImageView fx:id="img_logoIzq" fitHeight="85.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="img_logoIzq" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
                         <Insets left="30.0" />
                      </HBox.margin>
                   </ImageView>
-                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="335.0" HBox.hgrow="ALWAYS">
+                  <VBox alignment="CENTER" prefHeight="50.0" prefWidth="415.0" HBox.hgrow="ALWAYS">
                      <children>
                         <Label fx:id="lbl_empresa" text="EMPRESA">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Label>
-                        <Label text="GUIA MOVIL DE RECURSOS NATURALES">
-                           <font>
-                              <Font size="15.0" />
-                           </font>
-                        </Label>
-                        <Label text="SISTEMA ADMINISTRADOR DE INFORMACION">
-                           <font>
-                              <Font size="15.0" />
-                           </font>
-                        </Label>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="GUIA MOVIL DE RECURSOS NATURALES">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Separator opacity="0.5" prefWidth="5.0">
+                                 <HBox.margin>
+                                    <Insets left="7.0" right="7.0" />
+                                 </HBox.margin>
+                              </Separator>
+                              <Label text="SISTEMA ADMINISTRADOR DE INFORMACION">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </HBox>
                      </children>
                   </VBox>
-                  <ImageView fx:id="img_logoDer" fitHeight="85.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="img_logoDer" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
                         <Insets right="30.0" />
                      </HBox.margin>
@@ -72,7 +84,7 @@
                   <Insets />
                </VBox.margin>
             </Separator>
-            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="675.0">
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="675.0">
                <children>
                   <Label text="Creado por Don Teo" />
                </children>
@@ -86,9 +98,9 @@
             <JFXDrawer fx:id="drw_drawer" alignment="CENTER_LEFT" defaultDrawerSize="230.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="0.0" prefWidth="0.0" resizeContent="true" HBox.hgrow="NEVER" />
             <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" HBox.hgrow="ALWAYS">
                <children>
-                  <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0">
+                  <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="35.0">
                      <children>
-                        <JFXHamburger fx:id="hmb_menu" alignment="CENTER_LEFT" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="31.0" HBox.hgrow="NEVER">
+                        <JFXHamburger fx:id="hmb_menu" alignment="CENTER_LEFT" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="40.0" HBox.hgrow="NEVER">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
@@ -113,7 +125,7 @@
                               <Insets right="10.0" />
                            </padding>
                         </Label>
-                        <JFXButton fx:id="btn_salir" onAction="#salir_CerrarCesion" text="Salir">
+                        <JFXButton fx:id="btn_salir" buttonType="RAISED" onAction="#salir_CerrarCesion" text="Salir">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
@@ -130,7 +142,7 @@
                         <Insets />
                      </VBox.margin>
                   </Separator>
-                  <AnchorPane fx:id="anch_Contenido" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+                  <AnchorPane fx:id="anch_contenido" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>

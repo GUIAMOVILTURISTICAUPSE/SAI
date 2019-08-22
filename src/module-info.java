@@ -12,5 +12,4 @@ module guia_movil.sai {
 	opens ec.com.sai.controllers to javafx.fxml;
 //	opens javafx.controls to com.jfoenix;
 	
-	
 }

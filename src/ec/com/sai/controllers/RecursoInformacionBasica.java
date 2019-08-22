@@ -6,13 +6,10 @@ import javafx.scene.image.ImageView;
 
 public class RecursoInformacionBasica {
 
-    @FXML private Label lbl_NombreRecurso;
-
-    @FXML private Label lbl_Descripcion;
-
-    @FXML private Label lbl_UbicacionZonal;
-
-    @FXML private ImageView img_ImagenPrincipal;
+    @FXML private Label lbl_nombreRecurso;
+    @FXML private Label lbl_descripcion;
+    @FXML private Label lbl_ubicacionZonal;
+    @FXML private ImageView img_imagenPrincipal;
     
     @SuppressWarnings("unused")
 	private void initialize() {
