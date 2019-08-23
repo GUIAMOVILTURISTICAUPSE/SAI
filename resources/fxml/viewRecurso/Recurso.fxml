@@ -226,11 +226,6 @@
                               <AnchorPane fx:id="anch_facilidades" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                            </content>
                         </Tab>
-                        <Tab text="Contacto">
-                           <content>
-                              <AnchorPane fx:id="anch_contacto" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                           </content>
-                        </Tab>
                         <Tab text="Videos">
                            <content>
                               <AnchorPane fx:id="anch_video" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />

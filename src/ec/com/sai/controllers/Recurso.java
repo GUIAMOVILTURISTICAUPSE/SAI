@@ -30,13 +30,13 @@ public class Recurso {
     @FXML private AnchorPane anch_galeria;
     @FXML private AnchorPane anch_facilidades;
     @FXML private AnchorPane anch_senderos;
-    @FXML private AnchorPane anch_contacto;
     @FXML private AnchorPane anch_video;
     @FXML private AnchorPane anch_animaciones3d;
     @FXML private AnchorPane anch_comentarios;
 
 	public void initialize() {	
 		General.setContentParent("/viewGaleria/Galeria.fxml", anch_galeria);
+		General.setContentParent("/viewFacilidades/Facilidades.fxml", anch_facilidades);
 		
 	}     
     
