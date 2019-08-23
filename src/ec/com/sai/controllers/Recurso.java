@@ -37,6 +37,8 @@ public class Recurso {
 	public void initialize() {	
 		General.setContentParent("/viewGaleria/Galeria.fxml", anch_galeria);
 		General.setContentParent("/viewFacilidades/Facilidades.fxml", anch_facilidades);
+		General.setContentParent("/viewVideos/Videos.fxml", anch_video);
+		General.setContentParent("/viewAnimacion3D/Animacion3D.fxml", anch_animaciones3d);
 		
 	}     
     
