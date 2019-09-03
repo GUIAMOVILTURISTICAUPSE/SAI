@@ -39,6 +39,7 @@ public class Recurso {
 		General.setContentParent("/viewFacilidades/Facilidades.fxml", anch_facilidades);
 		General.setContentParent("/viewVideos/Videos.fxml", anch_video);
 		General.setContentParent("/viewAnimacion3D/Animacion3D.fxml", anch_animaciones3d);
+		General.setContentParent("/viewSenderos/Senderos.fxml", anch_senderos);
 		
 	}     
     
