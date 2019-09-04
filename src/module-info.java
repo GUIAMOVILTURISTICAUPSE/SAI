@@ -8,6 +8,7 @@ module guia_movil.sai {
 	requires javafx.controls;
 	requires javafx.fxml;
 	requires transitive javafx.graphics;
+	requires org.controlsfx.controls;
 	
 	opens ec.com.sai.controllers to javafx.fxml;
 //	opens javafx.controls to com.jfoenix;
