@@ -2,7 +2,7 @@ module guia_movil.sai {
 	exports ec.com.sai.main;
 	exports ec.com.sai.utilities;
 	exports ec.com.sai.controllers;
-	exports ec.com.sai.model;
+	exports ec.com.sai.model;	
 
 	requires com.jfoenix;
 	requires javafx.base;
@@ -12,6 +12,8 @@ module guia_movil.sai {
 	requires org.controlsfx.controls;
 	requires lombok;
 	requires javafx.web;
+	requires com.gluonhq.maps;
+	
 	
 	opens ec.com.sai.controllers to javafx.fxml;
 //	opens javafx.controls to com.jfoenix;
