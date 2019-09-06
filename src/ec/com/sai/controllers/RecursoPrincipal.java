@@ -26,40 +26,17 @@ public class RecursoPrincipal {
     @FXML private AnchorPane anch_contenedor;
     @FXML private AnchorPane anch_rp;
 
+	MapView map = new MapView();		
+	MapPoint mapPoint = new MapPoint(-2.206610, -80.692470);
+	
 	public void initialize() {	
 		General.setContentParent("/viewPrincipal/RecursoInformacionBasica.fxml", anch_contenedor);
 		General.setContentParent("/viewBusqueda/BusquedaRecurso.fxml", anch_busqueda);
-		
-		MapView map = new MapView();
-//		anch_mapa.getChildren().removeAll();
-//		anch_mapa.getChildren().add(map);
-		
-		try{
-			if(!anch_mapa.equals(null))anch_mapa.getChildren().removeAll();
-			AnchorPane.setBottomAnchor(map, 00.0);
-			AnchorPane.setLeftAnchor(map, 00.0);
-			AnchorPane.setTopAnchor(map, 00.0);
-			AnchorPane.setRightAnchor(map, 00.0);
-			anch_mapa.getChildren().setAll(map);
-		}catch(Exception ex){
-			System.out.println(ex.getMessage());
-		}
-		
-		MapPoint mapPoint = new MapPoint(-2.403112, -80.680321);
-//		Node icon = new Circle(5, Color.RED);
-		
-		
-//		Node icon = new Circle(5, Color.BLUE);
-//		Point2D mapPoint = baseMap.getMapPoint(point.getLatitude(), point.getLongitude());
-//		icon.setTranslateX(mapPoint.getX());
-//		icon.setTranslateY(mapPoint.getY());
-		
-//		MapLayer layer = new MapLayer();			
-//        map.addLayer(layer);
+		showBusqueda();		
         map.setCenter(mapPoint);
-        map.setZoom(30);
-        map.flyTo(1., mapPoint, 2.);
-        
+        map.setZoom(10);
+        map.flyTo(1., mapPoint, 2.);      
+        General.setMapatoAnchorPane(map, anch_mapa);
 	}        
 
     @FXML
@@ -80,11 +57,13 @@ public class RecursoPrincipal {
     }
 
     @FXML
-    void showBusqueda(ActionEvent event) {
+    void showBusqueda() {
     	if (hbx_busqueda.isVisible()) {
 			hbx_busqueda.setVisible(false);
+			hbx_busqueda.setManaged(false);
 		}else {
 			hbx_busqueda.setVisible(true);
+			hbx_busqueda.setManaged(true);
 		}	    	
     }
 
@@ -92,8 +71,10 @@ public class RecursoPrincipal {
     void showInformacionBasica(ActionEvent event) {
     	if (hbx_contenedorInfBasica.isVisible()) {
 			hbx_contenedorInfBasica.setVisible(false);
+			hbx_contenedorInfBasica.setManaged(false);
 		}else {
 			hbx_contenedorInfBasica.setVisible(true);
+			hbx_contenedorInfBasica.setManaged(true);
 		}	    	
     }
 

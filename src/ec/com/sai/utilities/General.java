@@ -2,6 +2,7 @@ package ec.com.sai.utilities;
 
 import java.io.IOException;
 
+import com.gluonhq.maps.MapView;
 import com.jfoenix.controls.JFXDrawer;
 
 import ec.com.sai.main.IncursioLaunch;
@@ -39,6 +40,24 @@ public class General {
 			AnchorPane.setTopAnchor(page, 00.0);
 			AnchorPane.setRightAnchor(page, 00.0);
 			contenedor.getChildren().setAll(page);
+		}catch(Exception ex){
+			System.out.println(ex.getMessage());
+		}
+	}
+	
+	/**
+	 * Establece el mapa como contenido del anchorPane enviado.
+	 * @param mapa
+	 * @param contenedor
+	 */
+	public static void setMapatoAnchorPane(MapView map, AnchorPane contenedor){
+		try{
+			if(!contenedor.equals(null))contenedor.getChildren().removeAll();	
+			AnchorPane.setBottomAnchor(map, 00.0);
+			AnchorPane.setLeftAnchor(map, 00.0);
+			AnchorPane.setTopAnchor(map, 00.0);
+			AnchorPane.setRightAnchor(map, 00.0);
+			contenedor.getChildren().setAll(map);
 		}catch(Exception ex){
 			System.out.println(ex.getMessage());
 		}

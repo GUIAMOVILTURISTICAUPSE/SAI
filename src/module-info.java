@@ -4,7 +4,7 @@ module guia_movil.sai {
 	exports ec.com.sai.controllers;
 	exports ec.com.sai.model;	
 
-	requires com.jfoenix;
+	requires transitive com.jfoenix;
 	requires javafx.base;
 	requires javafx.controls;
 	requires javafx.fxml;
@@ -12,7 +12,9 @@ module guia_movil.sai {
 	requires org.controlsfx.controls;
 	requires lombok;
 	requires javafx.web;
-	requires com.gluonhq.maps;
+	requires transitive com.gluonhq.maps;
+	requires com.gluonhq.attach.storage;
+	requires com.gluonhq.attach.util;
 	
 	
 	opens ec.com.sai.controllers to javafx.fxml;
