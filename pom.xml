@@ -5,26 +5,30 @@
 	<groupId>ec.edu.upse.facsistel.gitwym.guia_movil</groupId>
 	<artifactId>SAI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<dependencies>
-	<!-- https://mvnrepository.com/artifact/com.gluonhq.attach/util -->
-<!-- <dependency> -->
-<!--     <groupId>com.gluonhq.attach</groupId> -->
-<!--     <artifactId>util</artifactId> -->
-<!--     <version>4.0.2</version> -->
-<!-- </dependency> -->
-	
-<!-- 		 https://mvnrepository.com/artifact/com.gluonhq.attach/storage --> 
-<!-- 		<dependency> -->
-<!-- 			<groupId>com.gluonhq.attach</groupId> -->
-<!-- 			<artifactId>storage</artifactId> -->
-<!-- 			<version>4.0.2</version> -->
-<!-- 		</dependency> -->
+		<!-- GLUON Libraries para Maps necesarias -->
+		<!-- https://mvnrepository.com/artifact/com.gluonhq.attach/util -->
+		<dependency>
+			<groupId>com.gluonhq.attach</groupId>
+			<artifactId>util</artifactId>
+			<version>4.0.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.gluonhq.attach/storage -->
+		<dependency>
+			<groupId>com.gluonhq.attach</groupId>
+			<artifactId>storage</artifactId>
+			<version>4.0.2</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.gluonhq/maps -->
 		<dependency>
 			<groupId>com.gluonhq</groupId>
 			<artifactId>maps</artifactId>
 			<version>2.0.0-ea+2</version>
 		</dependency>
+		<!-- FIN GLUON Libraries -->
+		<!-- LOMBOK Libraries para getters y setters injeccion -->
 		<!-- https://mvnrepository.com/artifact/org.mapstruct/mapstruct-processor -->
 		<dependency>
 			<groupId>org.mapstruct</groupId>
@@ -39,6 +43,7 @@
 			<version>1.18.8</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- FIN LOMBOK Libraries -->
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-base</artifactId>
@@ -69,12 +74,22 @@
 			<version>11.0.1</version>
 			<scope>compile</scope>
 		</dependency>
+		<!-- CONTROL FX para notificaciones push -->
+		<!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+		<dependency>
+			<groupId>org.controlsfx</groupId>
+			<artifactId>controlsfx</artifactId>
+			<version>11.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.gluonhq.attach/storage -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>[4,)</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Controles Jfoenix (tienen material design) -->
 		<!-- https://mvnrepository.com/artifact/com.jfoenix/jfoenix -->
 		<dependency>
 			<groupId>com.jfoenix</groupId>
@@ -132,4 +147,19 @@
 			</plugin>
 		</plugins>
 	</build>
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+		<repository>
+			<id>gluonrepository</id>
+			<name>Gluon Repository</name>
+			<url>http://nexus.gluonhq.com/nexus/content/repositories/releases/</url>
+		</repository>
+	</repositories>
 </project>
