@@ -19,7 +19,7 @@ public class Sendero {
 	@Getter @Setter private String estado;
 	@Getter @Setter private DificultadRecorrido dificultad;
 	@Getter @Setter private Seguridad seguridad;
-	@Getter @Setter private DisponibilidadCelular señalCelular;
+	@Getter @Setter private DisponibilidadCelular senalCelular;
 	@Getter @Setter private ArrayList<Costo> costos;
 	@Getter @Setter private ArrayList<Recorrido> recorridoRuta;
 	@Getter @Setter private ArrayList<Equipamiento> equipamiento;
