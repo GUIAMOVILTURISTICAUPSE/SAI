@@ -35,7 +35,7 @@ public class RecursoPrincipal {
 		showBusqueda();		
         map.setCenter(mapPoint);
         map.setZoom(10);
-        map.flyTo(1., mapPoint, 2.);      
+        map.flyTo(1., mapPoint, 2.); 
         General.setMapatoAnchorPane(map, anch_mapa);
 	}        
 
