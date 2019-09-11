@@ -15,7 +15,7 @@ public class Usuario {
 	@Getter @Setter private String nombre;
 	@Getter @Setter private String apellidos;
 	@Getter @Setter private String usuario;
-	@Getter @Setter private String contraseña;
+	@Getter @Setter private String contrasena;
 	@Getter @Setter private String telefono;
 	@Getter @Setter private String celular;
 	@Getter @Setter private String correo;
